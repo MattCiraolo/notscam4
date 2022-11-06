@@ -21,7 +21,7 @@ def serve_ajax():
   return bottle.static_file('https://mattciraolo.github.io/notscam4/ajax.js', root='.')
   
 
-@bottle.post('/writeFile')
+@bottle.post('/writeFile.py')
 def callWriteStuff():
   temp = request.body.read().decode("utf-8")
   writeFile.writeFullEmail(temp)
