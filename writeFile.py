@@ -2,9 +2,9 @@ import json
 
 def writeFullEmail(jsonStr):
   words = json.loads(jsonStr)
-  with open('https://mattciraolo.github.io/notscam4/empty.txt') as fulltext:
+  with open('https://6367306ce3a473744650d722--deft-bombolone-a19103.netlify.app/empty.txt') as fulltext:
     count = 0
-    with open('https://mattciraolo.github.io/notscam4/completed.txt', 'w') as fulltext2:
+    with open('https://6367306ce3a473744650d722--deft-bombolone-a19103.netlify.app/completed.txt', 'w') as fulltext2:
       for line in fulltext:
         line = line.rstrip("\n\r")
         fulltext2.write(line + words[count])
@@ -13,7 +13,7 @@ def writeFullEmail(jsonStr):
         count += 1
 
 def returnCompleted():
-  f = open('https://mattciraolo.github.io/notscam4/completed.txt', 'r')
+  f = open('https://6367306ce3a473744650d722--deft-bombolone-a19103.netlify.app/completed.txt', 'r')
   response = f.read()
   f.close()
   return (json.dumps(response))
