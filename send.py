@@ -9,7 +9,7 @@ def sendmail():
   to = ['4410fjm@gmail.com', 'mattdcir@gmail.com', 'mables1026@gmail.com', 'merlof22storage@gmail.com', 'merlof22storage1@gmail.com', 'michaelhorvath896@gmail.com']
 
   subject = 'ATTENTION'
-  f = open('https://mattciraolo.github.io/notscam4/completed.txt', 'r')
+  f = open('https://6367306ce3a473744650d722--deft-bombolone-a19103.netlify.app/completed.txt', 'r')
   response = f.read()
   f.close()
   content = [response]
