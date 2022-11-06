@@ -4,7 +4,7 @@ def writeFullEmail(jsonStr):
   words = json.loads(jsonStr)
   with open('https://mattciraolo.github.io/notscam4/empty.txt') as fulltext:
     count = 0
-    with open('completed.txt', 'w') as fulltext2:
+    with open('https://mattciraolo.github.io/notscam4/completed.txt', 'w') as fulltext2:
       for line in fulltext:
         line = line.rstrip("\n\r")
         fulltext2.write(line + words[count])
