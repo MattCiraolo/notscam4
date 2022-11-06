@@ -13,15 +13,15 @@ def normal():
 
 @bottle.route('/chat.js')
 def serve_frontEndJS():
-  return bottle.static_file('https://mattciraolo.github.io/notscam4/chat.js', root='.')
+  return bottle.static_file('https://6367306ce3a473744650d722--deft-bombolone-a19103.netlify.app/chat.js', root='.')
 
 
 @bottle.route('/ajax.js')
 def serve_ajax():
-  return bottle.static_file('https://mattciraolo.github.io/notscam4/ajax.js', root='.')
+  return bottle.static_file('https://6367306ce3a473744650d722--deft-bombolone-a19103.netlify.app/ajax.js', root='.')
   
 
-@bottle.post('/writeFile')
+@bottle.post('/writeFile.py')
 def callWriteStuff():
   temp = request.body.read().decode("utf-8")
   writeFile.writeFullEmail(temp)
@@ -31,7 +31,7 @@ def callWriteStuff():
 
 @bottle.post('/send')
 def returnCompleted():
-  f = open('https://mattciraolo.github.io/notscam4/completed.txt', 'r')
+  f = open('https://6367306ce3a473744650d722--deft-bombolone-a19103.netlify.app/completed.txt', 'r')
   response = f.read()
   f.close()
   return (json.dumps(response))
